@@ -1,0 +1,116 @@
+/* AdminSidebar.css - Green & White Theme */
+
+.admin-sidebar {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #059669 0%, #047857 100%);
+  color: white;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.admin-sidebar h2 {
+  margin: 0;
+  padding: 30px 20px;
+  font-size: 26px;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Remove default ul styling */
+.admin-sidebar > ul {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.admin-sidebar > ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-sidebar > ul > li > a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+  position: relative;
+}
+
+.admin-sidebar > ul > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left-color: white;
+  padding-left: 28px;
+}
+
+.admin-sidebar > ul > li > a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left-color: white;
+  font-weight: 600;
+}
+
+.admin-sidebar > ul > li > a::before {
+  content: "›";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.admin-sidebar > ul > li > a:hover::before {
+  opacity: 1;
+}
+
+/* Scrollbar styling */
+.admin-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.admin-sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .admin-sidebar h2 {
+    padding: 20px;
+    font-size: 22px;
+  }
+
+  .admin-sidebar > ul {
+    padding: 10px 0;
+  }
+
+  .admin-sidebar > ul > li > a {
+    padding: 14px 20px;
+  }
+}

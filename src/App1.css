@@ -1,0 +1,94 @@
+/* Navbar.css */
+
+/* Navbar setup */
+.navbar {
+  background-color: #27ae60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Container inside navbar to manage spacing */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+}
+
+/* Navigation links list */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual nav links */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+/* Hover/focus effect on links */
+/* .nav-links a:hover,
+.nav-links a:focus {
+  background-color: #1e8449;
+  color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+} */
+ /* Hover/focus effect on links — subtle darkening */
+/* .nav-links a:hover,
+.nav-links a:focus {
+  background-color: #23914f; 
+  color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+} */
+
+
+/* Active (while clicking) effect */
+/* .nav-links a:active {
+  background-color: #145a32;
+  color: #f5f5f5;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+} */
+
+/* 
+.nav-links a.active {
+  background-color: #145a32; 
+  color: #f5f5f5;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+} */
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #23914f;  /* your hover color */
+  color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Active link — chosen (stays styled) */
+.nav-links a.active {
+  background-color: #23914f;  /* reuse hover color for active */
+  color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+/* Ensures content below navbar is not hidden by it */
+.main-content {
+  padding-top: 80px;
+  min-height: calc(100vh - 80px);
+  background-color: #f5f5f5;
+}
