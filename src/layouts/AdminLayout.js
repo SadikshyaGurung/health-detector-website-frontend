@@ -1,7 +1,4 @@
-// import React from "react";
-// import AdminSidebar from "./AdminSidebar";
-// import AdminTopbar from "./AdminTopbar";
-// import "./admin.css";
+
 import React from "react";
 import AdminSidebar from "../components/AdminSidebar"; // <-- updated path
 import AdminTopbar from "../components/AdminTopbar";   // <-- updated path

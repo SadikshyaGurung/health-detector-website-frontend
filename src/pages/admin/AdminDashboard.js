@@ -30,14 +30,14 @@ const AdminDashboard = () => {
 
   return (
     <div>
-      <h1>📊 Dashboard</h1>
+      <h1>Dashboard</h1>
       <div className="stats">
-        <div className="card">👤 Users: {stats.total_users}</div>
-        <div className="card">💬 Messages: {stats.total_messages}</div>
-        <div className="card">🩺 Diagnoses: {stats.total_diagnoses}</div>
+        <div className="card">Users: {stats.total_users}</div>
+        <div className="card">Messages: {stats.total_messages}</div>
+        <div className="card">Diagnoses: {stats.total_diagnoses}</div>
       </div>
 
-      <h2 style={{ marginTop: "2rem" }}>📩 Recent Messages</h2>
+      <h2 style={{ marginTop: "2rem" }}> Recent Messages</h2>
       <div className="messages-preview">
         {recentMessages.length === 0 ? (
           <p>No messages yet.</p>

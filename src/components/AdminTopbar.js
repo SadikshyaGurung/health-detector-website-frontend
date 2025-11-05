@@ -8,7 +8,7 @@ const AdminTopbar = () => {
 
   return (
     <div className="admin-topbar">
-      <span>Welcome, Admin 👋</span>
+      <span>Welcome, Admin </span>
       <button onClick={handleLogout}>Logout</button>
     </div>
   );

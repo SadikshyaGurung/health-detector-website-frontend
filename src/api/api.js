@@ -10,7 +10,7 @@ export const api = axios.create({
   },
 });
 
-// ✅ helper function to save diagnosis
+//  helper function to save diagnosis
 export const saveDiagnosis = async (symptoms, result) => {
   try {
     const token = JSON.parse(localStorage.getItem("user"))?.token;

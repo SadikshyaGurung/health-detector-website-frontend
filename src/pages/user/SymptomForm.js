@@ -57,7 +57,7 @@ const SymptomForm = ({ user }) => {
 
       if (user && user.token) {
         await saveDiagnosis(symptomValues, data.prediction); // call /api/diagnosis
-        console.log("✅ Diagnosis saved successfully");
+        console.log(" Diagnosis saved successfully");
       } else {
         console.warn("User not logged in — skipping save to backend");
       }

@@ -1,15 +1,3 @@
-// import React from 'react'
-
-// const Aboutus = () => {
-//   return (
-//     <div>Aboutus</div>
-//   )
-// }
-
-// export default Aboutus;
-
-// src/components/AboutUs.js
-
 import React from 'react';
 import './Aboutus.css'; // Link to the CSS styling file
 

@@ -1,14 +1,3 @@
-// import React from 'react'
-
-// const Contactus = () => {
-//   return (
-//     <div>Contactus</div>
-//   )
-// }
-
-// export default Contactus;
-
-// src/components/ContactUs.js
 import React, { useState } from "react";
 import { api } from "../../api"; // Import axios instance
 import "./Contactus.css";
@@ -61,7 +50,7 @@ const Contactus = () => {
 
       {submitted && (
         <p className="success-message">
-          ✅ Thank you! We'll get back to you shortly.
+          Thank you! We'll get back to you shortly.
         </p>
       )}
       {error && <p className="error-message">{error}</p>}

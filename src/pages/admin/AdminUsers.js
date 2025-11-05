@@ -27,7 +27,7 @@ const AdminUsers = () => {
 
   return (
     <div>
-      <h1>👤 Users List</h1>
+      <h1> Users List</h1>
       {users.length === 0 ? (
         <p>No users found.</p>
       ) : (

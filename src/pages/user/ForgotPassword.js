@@ -25,14 +25,14 @@ const ForgotPassword = () => {
       const res = await web.post("/api/forgot-password", { email });
 
       if (res.data.success) {
-        setMessage(`✅ Code sent to ${email}. Check your inbox.`);
+        setMessage(` Code sent to ${email}. Check your inbox.`);
         setStep(2); // go to reset password step
       } else {
-        setMessage(`❌ ${res.data.message || "Failed to send code"}`);
+        setMessage(` ${res.data.message || "Failed to send code"}`);
       }
     } catch (err) {
       console.error(err);
-      setMessage(`❌ ${err.response?.data?.message || "An error occurred. Try again."}`);
+      setMessage(` ${err.response?.data?.message || "An error occurred. Try again."}`);
     } finally {
       setLoading(false);
     }
@@ -52,14 +52,14 @@ const ForgotPassword = () => {
       });
 
       if (res.data.success) {
-        setMessage("✅ Password reset successful. Redirecting to login...");
+        setMessage(" Password reset successful. Redirecting to login...");
         setTimeout(() => navigate("/login"), 2000);
       } else {
-        setMessage(`❌ ${res.data.message || "Failed to reset password"}`);
+        setMessage(` ${res.data.message || "Failed to reset password"}`);
       }
     } catch (err) {
       console.error(err);
-      setMessage(`❌ ${err.response?.data?.message || "An error occurred. Try again."}`);
+      setMessage(` ${err.response?.data?.message || "An error occurred. Try again."}`);
     } finally {
       setLoading(false);
     }

@@ -30,7 +30,7 @@ const AdminMessages = () => {
 
   return (
     <div>
-      <h1>💬 All Messages</h1>
+      <h1> All Messages</h1>
       {messages.length === 0 ? (
         <p>No messages found.</p>
       ) : (

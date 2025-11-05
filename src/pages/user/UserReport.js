@@ -32,20 +32,3 @@ const UserReport = ({ user }) => {
 };
 
 export default UserReport;
-
-
-// import React from "react";
-// import { useParams } from "react-router-dom";
-
-// const UserReport = () => {
-//   const { username } = useParams();
-
-//   return (
-//     <div>
-//       <h1>Report for {username}</h1>
-//       {/* You can fetch and display user-specific data here */}
-//     </div>
-//   );
-// };
-
-// export default UserReport;
